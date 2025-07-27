@@ -27,7 +27,7 @@ Widget ScoreText(String text, Color color){
 
 
 Widget Title1Text(String text, Color color){
-  return Text("${text}", style: TextStyle(color : color, fontSize: 26.sp , fontFamily: "Title2", fontWeight: FontWeight.w600),);
+  return Text("${text}", style: TextStyle(color : color, fontSize: 23.sp , fontFamily: "Title2", fontWeight: FontWeight.w600),);
 }
 
 Widget Title2Text(String text, Color color){

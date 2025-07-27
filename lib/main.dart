@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:run_wearos/game/main/view/GameListView.dart';
+import 'package:run_wearos/utils/TokenReceiver.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  TokenReceiver.init();
+  await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
 
